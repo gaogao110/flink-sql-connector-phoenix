@@ -33,7 +33,7 @@ public class PhoenixDialect extends AbstractDialect {
 
     @Override
     public boolean canHandle(String url) {
-        return url.startsWith("jdbc:org.apache.flink.connector.phoenix:");
+        return url.startsWith("jdbc:phoenix:");
     }
 
     @Override
@@ -48,7 +48,7 @@ public class PhoenixDialect extends AbstractDialect {
 
     @Override
     public Optional<String> defaultDriverName() {
-        return Optional.of("org.apache.org.apache.flink.connector.phoenix.jdbc.PhoenixDriver");
+        return Optional.of("org.apache.phoenix.jdbc.PhoenixDriver");
     }
 
     /**
