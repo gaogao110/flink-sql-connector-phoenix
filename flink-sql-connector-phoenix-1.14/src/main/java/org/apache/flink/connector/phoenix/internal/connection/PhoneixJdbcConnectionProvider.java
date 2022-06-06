@@ -95,8 +95,8 @@ public class PhoneixJdbcConnectionProvider implements JdbcConnectionProvider, Se
                 });
 
                 if (this.namespaceMappingEnabled  && this.mapSystemTablesEnabled) {
-                    info.setProperty("org.apache.flink.connector.phoenix.schema.isNamespaceMappingEnabled", "true");
-                    info.setProperty("org.apache.flink.connector.phoenix.schema.mapSystemTablesToNamespace", "true");
+                    info.setProperty("phoenix.schema.isNamespaceMappingEnabled", "true");
+                    info.setProperty("phoenix.schema.mapSystemTablesToNamespace", "true");
                 }
 
                 this.connection = driver.connect(this.jdbcOptions.getDbURL(), info);

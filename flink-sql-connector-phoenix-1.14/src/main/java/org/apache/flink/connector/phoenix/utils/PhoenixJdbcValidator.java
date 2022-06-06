@@ -17,9 +17,9 @@ import static org.apache.flink.table.descriptors.Schema.SCHEMA;
 @Internal
 public class PhoenixJdbcValidator extends ConnectorDescriptorValidator {
 
-    public static final String CONNECTOR_TYPE_VALUE_JDBC = "org/apache/flink/connector/phoenix";
-    public static final String PHOENIX_SCHEMA_NAMESPACE_MAPPING_ENABLE = "org.apache.flink.connector.phoenix.schema.isnamespacemappingenabled";
-    public static final String PHOENIX_SCHEMA_MAP_SYSTEMTABLE_ENABLE = "org.apache.flink.connector.phoenix.schema.mapsystemtablestonamespace";
+    public static final String CONNECTOR_TYPE_VALUE_JDBC = "phoenix";
+    public static final String PHOENIX_SCHEMA_NAMESPACE_MAPPING_ENABLE = "phoenix.schema.isnamespacemappingenabled";
+    public static final String PHOENIX_SCHEMA_MAP_SYSTEMTABLE_ENABLE = "phoenix.schema.mapsystemtablestonamespace";
 
 
     public static final String CONNECTOR_URL = "connector.url";
